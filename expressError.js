@@ -9,9 +9,9 @@ class ExpressError extends Error {
     super();
     this.message = message;
     this.status = status;
+    // can do if node_env, don't console log
     console.error(this.stack);
   }
 }
-
 
 module.exports = ExpressError;
